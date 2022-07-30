@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+body{
+  font-family: "public sans", sans-serif;
+  min-height: 100%;
+  background-color: black;
+}
+
+header img{
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+
+li{
+  display: table-cell;
+  padding: 12px;
+}
+a{
+  color: white;
+  text-decoration: none;
+  display: inline-block
+  }
+
+
+  li:hover a{
+    color: yellow;
+    background-color:red;
+}
+
+
+article img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+
+
+.navbar{
+  text-align: center;
+
+}
+
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0 , 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: black;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: black;
+}
+
+.main {
+  grid-area: main;
+  background-color:black;
+}
+.footer{
+  grid-area: footer;
+  background-color: black;
+  font-size: 30px;
+}
+
+.tabla{
+  color: black;
+  background-color: orange;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  }
+
+  form{
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+form h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+form textarea{
+    min-height: 200px;
+    max-height: 300px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#boton{
+    background: gray;
+    color: white;
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template: 
+  "header" 100px
+  "navbar" 50px
+  "main" auto
+  "footer" 100px;
+}
+
+@media (min-width: 600px){
+  .grid-container{
+    background-color: black;
+
+
+    grid-template:
+    "header navbar" 100px
+    "main main" auto
+    "footer footer" 100px; 
+    }
+
+@media (min-width: 900px){
+  .grid-container{
+    background-color: black;
+    
+    
+    grid-template:
+    "header navbar" 100px
+    "main main" auto
+    "footer footer" 100px; 
+    }
+}
